@@ -12,7 +12,7 @@ export PATH=/om2/group/tsailab/conda3/envs/rnaseq/bin:$PATH
 export PATH=/om2/group/tsailab/tools/bin:$PATH
 
 if [ ! -f "om-profile.config" ] ; then
-  # wget https://github.com/pilm-bioinformatics/master-scripts/raw/master/config/om-profile.config
+  https://github.com/pilm-bioinformatics/master-scripts/raw/master/config/om-profile.config
 fi
 
 # Add singleEnd if true
