@@ -2,6 +2,7 @@
 #SBATCH -N 1
 #SBATCH -c 1
 #SBATCH --mem=4000
+#SBATCH -t 0-23:00:00
 #SBATCH -J "rnaseq"
 #SBATCH -e job.e
 #SBATCH -o job.o
