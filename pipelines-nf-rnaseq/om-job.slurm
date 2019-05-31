@@ -16,5 +16,5 @@ if [ ! -f "om-profile.config" ] ; then
   https://github.com/pilm-bioinformatics/master-scripts/raw/master/config/om-profile.config
 fi
 
-# Add singleEnd if true
-nextflow run pilm-bioinformatics/pipelines-nf-rnaseq -c om-profile.config -profile om --reads data/*R{1,2}gz --genome hg38
+# Add --singleEnd if true
+nextflow run pilm-bioinformatics/pipelines-nf-rnaseq -c om-profile.config -profile om --reads data/*R{1,2}gz --genome GRCh38  -with-report process.html -with-timeline time.html -resume 
