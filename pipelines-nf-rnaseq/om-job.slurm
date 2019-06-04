@@ -7,13 +7,13 @@
 #SBATCH -e job.e
 #SBATCH -o job.o
 ## SBATCH --mail-type=END,FAIL # this line is commented
-## SBATCH --mail-user=tobias.jakobi@med.uni-heidelberg.de  # this line is commented
+## SBATCH --mail-user=user@mit.edu  # this line is commented
 
-export PATH=/om2/group/tsailab/conda3/envs/rnaseq/bin:$PATH
-export PATH=/om2/group/tsailab/tools/bin:$PATH
+export PATH=/om2/group/pilm/conda3/envs/nf-core-rnaseq-1.4dev/bin:$PATH
+export PATH=/om2/group/pilm/bin:$PATH
 
 if [ ! -f "om-profile.config" ] ; then
-  https://github.com/pilm-bioinformatics/master-scripts/raw/master/config/om-profile.config
+  wget https://github.com/pilm-bioinformatics/master-scripts/raw/master/config/om-profile.config
 fi
 
 # Add --singleEnd if true
