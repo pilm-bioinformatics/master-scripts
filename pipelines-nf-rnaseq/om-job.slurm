@@ -21,7 +21,7 @@ fi
 
 ## Example pipeline
 GENOME=/om/group/pilm/genomes/Mmusculus/GRCm38.96/GRCm38.96.config
-#GENOME=/om/group/pilm/genomes/Mmusculus/GRCh38.96/GRCh38.96.config
+#GENOME=/om/group/pilm/genomes/Hsapiens/GRCh38.96/GRCh38.96.config
 
 # Add --singleEnd if true
 # nextflow run /om2/group/pilm/pipelines/dev/pipelines-nf-rnaseq -c om-profile.config -c om-rnaseq.config -c $GENOME  --reads "/om/group/pilm/test_data/mouse/*_{1,2}.fastq.gz" -resume
