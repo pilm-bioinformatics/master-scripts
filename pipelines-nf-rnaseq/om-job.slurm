@@ -15,7 +15,7 @@ export PATH=/om2/group/pilm/bin:$PATH
 if [ ! -f "om-profile.config" ] ; then
   cp  /om2/group/pilm/master-scripts/config/om-profile.config .
 fi
-if [ ! -f "om-rnaseq" ] ; then
+if [ ! -f "om-rnaseq.config" ] ; then
   cp  /om2/group/pilm/master-scripts/pipelines-nf-rnaseq/om-rnaseq.config .
 fi
 
