@@ -24,5 +24,5 @@ GENOME=/om/group/pilm/genomes/Mmusculus/GRCm38.96/GRCm38.96.config
 #GENOME=/om/group/pilm/genomes/Hsapiens/GRCh38.96/GRCh38.96.config
 #GENOME=/om/group/pilm/genomes/Mmusculus/NCBIM37.67/NCBIM37.67.config
 
-# Add --singleEnd if true
+# Add --singleEnd if true at the end of the next line
 # nextflow run /om2/group/pilm/pipelines/dev/pipelines-nf-rnaseq -c om-profile.config -c om-rnaseq.config -c $GENOME  --reads "/om/group/pilm/test_data/mouse/*_{1,2}.fastq.gz" -resume
